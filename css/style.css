@@ -1,0 +1,87 @@
+:root {
+    --background: #2B374B;
+    --surface: #3C5875;
+    --primary: #B26E81;
+    --secondary: #6A5873;
+    --accent: #E6787F;
+    --white: rgba(255,255,255,0.87);
+  }
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    background-color: var(--background);
+    color: var(--white);
+}
+
+h1, h2, h3, h4, h4, h5 {
+    font-family: 'Red Hat Mono', monospace;
+    margin-bottom: 1em;
+}
+
+h1 {
+    font-size: 2em;
+    line-height: 2em;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: color 300ms ease-in-out;
+}
+
+a:hover {
+    color: var(--primary);
+}
+
+.main {
+    width: 50vw;
+    min-width: 500px;
+    max-width: 100%;
+    margin: 2em auto;
+}
+
+@media screen and (min-width:767px) {
+    .main {
+        margin: 5em auto;
+    }
+}
+
+.text-area {
+    padding: 1em;
+}
+
+.small-text {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 0.4em;
+    line-height: 0.4em;
+    font-weight: 400;
+}
+
+.icon-wrap svg {
+    width: 1em;
+    height: 1em;
+    fill: var(--white);
+    transition: fill 300ms ease-in-out;
+}
+
+.icon-wrap {
+    border: 1px solid var(--white);
+    padding: 0.4em;
+    border-radius: 100%;
+    display: inline-block;
+    transition: border 300ms ease-in-out;
+    margin: 0 1em 1em 0;
+}
+
+.icon-wrap:hover svg,
+.icon-wrap:hover {
+    border-color: var(--accent);
+    fill: var(--accent);
+}
